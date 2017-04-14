@@ -28,5 +28,28 @@ describe("stack object", function() {
         expect(stack.Size()).to.equal(2);
     });
     
+    it("testEmptyPop()", function(done) {
+        var stack = new Stack();
+        try {
+            stack.Pop();
+        } catch (e) {
+            done();
+        }
+    });
     
+    it("testPushandPop()", function() {
+        var stack = new Stack();
+        stack.Push(1);
+        stack.Pop();
+        expect(stack.Size()).to.equal(0);
+    });
+    
+    it("testPushPudhPopTop()", function() {
+        var stack = new Stack();
+        stack.Push(1);
+        stack.Push(2);
+        expect(stack.Size()).to.equal(2);
+        stack.Pop();
+        expect(stack.Top()).to.equal(1);
+    });
 });

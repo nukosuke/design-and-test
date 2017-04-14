@@ -1,5 +1,5 @@
 var Stack = function() {
-    this._stack = [];
+    this.value = [];
     this.size = 0;
 };
     
@@ -8,17 +8,26 @@ Stack.prototype.isEmpty = function(){
 };
     
 Stack.prototype.Push = function(value){
-    this.value = value;
-    this.size++;
+    this.value[this.size++] = value;
 };
     
 Stack.prototype.Top = function(){
-    return this.value;
+    this.emptycheck();
+    return this.value[this.size - 1];
     // this._stack.push(1);
 };
     
 Stack.prototype.Size = function() {
     return this.size;
 };
+
+Stack.prototype.Pop = function() {
+    this.emptycheck();
+    return this.size--;
+};
+
+Stack.prototype.emptycheck = function(){
+    if(this.isEmpty()) throw new Error;
+}
 
 module.exports = Stack;

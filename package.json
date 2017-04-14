@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "$(npm bin)/mocha ./test/stack.spec.js"
+    "test": "$(npm bin)/mocha ./test/circle.spec.js"
   },
   "repository": {
     "type": "git",
