@@ -1,0 +1,23 @@
+{
+  "name": "design-and-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nukosuke/design-and-test.git"
+  },
+  "keywords": [
+    "design",
+    "test"
+  ],
+  "author": "nukosuke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nukosuke/design-and-test/issues"
+  },
+  "homepage": "https://github.com/nukosuke/design-and-test#readme"
+}
