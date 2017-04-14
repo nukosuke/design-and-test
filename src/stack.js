@@ -4,7 +4,7 @@ var Stack = function() {
 };
     
 Stack.prototype.isEmpty = function(){
-    return true;
+    return (this.size === 0);
 };
     
 Stack.prototype.Push = function(value){

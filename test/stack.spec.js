@@ -8,6 +8,13 @@ describe("stack object", function() {
         expect(stack.isEmpty()).to.equal(true);
     });
     
+    it("testPushAndTop()", function() {
+        var stack = new Stack();
+        stack.Push(1);
+        expect(stack.isEmpty()).to.equal(false);
+        expect(stack.Top()).to.equal(1);
+    });
+    
     it("isPushandTop()", function() {
         var stack = new Stack();
         stack.Push(1);
