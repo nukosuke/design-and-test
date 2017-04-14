@@ -17,6 +17,9 @@ describe("stack object", function() {
     it("testPushAndSize()", function() {
         var stack = new Stack();
         stack.Push(1);
-        expect(stack.Size()).to.equal(1);
+        stack.Push(2);
+        expect(stack.Size()).to.equal(2);
     });
+    
+    
 });

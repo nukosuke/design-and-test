@@ -1,5 +1,6 @@
 var Stack = function() {
     this._stack = [];
+    this.size = 0;
 };
     
 Stack.prototype.isEmpty = function(){
@@ -8,6 +9,7 @@ Stack.prototype.isEmpty = function(){
     
 Stack.prototype.Push = function(value){
     this.value = value;
+    this.size++;
 };
     
 Stack.prototype.Top = function(){
@@ -16,7 +18,7 @@ Stack.prototype.Top = function(){
 };
     
 Stack.prototype.Size = function() {
-    return 1;
+    return this.size;
 };
 
 module.exports = Stack;
