@@ -1,9 +1,22 @@
 var expect = require("chai").expect;
-var stack = require("../src/stack");
+var Stack = require("../src/stack");
 
 describe("stack object", function() {
     
     it("isEmpty()", function() {
-       expect(stack.size()).toBe(0);
+        var stack = new Stack();
+        expect(stack.isEmpty()).to.equal(true);
+    });
+    
+    it("isPushandTop()", function() {
+        var stack = new Stack();
+        stack.Push(1);
+        expect(stack.Top()).to.equal(1);
+    });
+    
+    it("testPushAndSize()", function() {
+        var stack = new Stack();
+        stack.Push(1);
+        expect(stack.Size()).to.equal(1);
     });
 });

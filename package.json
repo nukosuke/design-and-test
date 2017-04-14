@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "$(npm bin)/mocha --compilers js:espower-babel/guess ./test/stack.spec.js"
+    "test": "$(npm bin)/mocha ./test/stack.spec.js"
   },
   "repository": {
     "type": "git",
@@ -22,16 +22,7 @@
   "homepage": "https://github.com/nukosuke/design-and-test#readme",
   "devDependencies": {
     "chai": "^3.5.0",
-    "espower-babel": "^4.0.3",
-    "karma": "^1.6.0",
-    "karma-chrome-launcher": "^2.0.0",
-    "karma-mocha": "^1.3.0",
-    "karma-phantomjs-launcher": "^1.0.4",
-    "karma-webpack": "^2.0.3",
-    "mocha": "^3.2.0",
-    "phantomjs-prebuilt": "^2.1.14"
+    "mocha": "^3.2.0"
   },
-  "dependencies": {
-    "webpack": "^2.3.3"
-  }
+  "dependencies": {}
 }
